@@ -18,7 +18,7 @@ CREATE TABLE `posts` (
   `title` text NOT NULL,
   `message` text NOT NULL,
   `category_id` int(11) NOT NULL,
-  `userid` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `status` enum('published','draft','archived','') NOT NULL DEFAULT 'published',
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL DEFAULT current_timestamp()
